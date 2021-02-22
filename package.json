@@ -1,9 +1,9 @@
 {
-  "name": "ual-plainjs-renderer",
-  "version": "0.3.0",
+  "name": "@arisenual/plainjs-renderer",
+  "version": "1.0.0",
   "author": {
-    "name": "block.one",
-    "url": "https://block.one/"
+    "name": "PeepsLabs",
+    "url": "https://peepsx.com"
   },
   "collaborators": [
     "Chris Allnutt",
@@ -22,7 +22,7 @@
     "prepare": "yarn build"
   },
   "dependencies": {
-    "universal-authenticator-library": "0.3.0"
+    "@arisenual/core": "^1.0.0"
   },
   "devDependencies": {
     "@blockone/eslint-config-blockone": "^3.0.0",
