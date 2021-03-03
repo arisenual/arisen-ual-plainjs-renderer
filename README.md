@@ -4,37 +4,37 @@ This library providers a Plain JS renderer around the [Universal Authenticator L
 
 It uses nothing but standard Javascript and should be supported across desktop and mobile.
 
-![EOSIO Labs](https://img.shields.io/badge/EOSIO-Labs-5cb3ff.svg)
+![PeepsLabs](https://img.shields.io/badge/PeepsLabs-5cb3ff.svg)
 
-# About EOSIO Labs
+# About PeepsLabs
 
-EOSIO Labs repositories are experimental.  Developers in the community are encouraged to use EOSIO Labs repositories as the basis for code and concepts to incorporate into their applications. Community members are also welcome to contribute and further develop these repositories. Since these repositories are not supported by Block.one, we may not provide responses to issue reports, pull requests, updates to functionality, or other requests from the community, and we encourage the community to take responsibility for these.
+PeepsLabs repositories are experimental.  Developers in the community are encouraged to use PeepsLabs repositories as the basis for code and concepts to incorporate into their applications. Community members are also welcome to contribute and further develop these repositories. Since these repositories are not supported by Peeps, we may not provide responses to issue reports, pull requests, updates to functionality, or other requests from the community, and we encourage the community to take responsibility for these.
 
 ## Getting Started
 #### With ``yarn``
 ```bash
-yarn add ual-plainjs-renderer
+yarn add @arisenual/plainjs-renderer
 ```
 Then, install the authenticators that you wish to use...
 ```bash
-yarn add ual-scatter ual-lynx
+yarn add @arisenual/peepsid-desktop @arisenual/peepsid-ios
 ```
 #### With ``npm``
 ```bash
-npm i ual-plainjs-renderer
+npm i @arisenual/plainjs-renderer
 ```
 Then, install the authenticators that you wish to use...
 ```bash
-npm i ual-scatter ual-lynx
+npm i @arisenual/peepsid-desktop @arisenual/peepsid-ios
 ```
 
 
 ## Basic Usage
 The below code will render a button to the DOM that will launch the Universal Authenticator Library modal.
 ```javascript
-import { UALJs } from 'ual-plainjs-renderer'
-import { Scatter } from 'ual-scatter'
-import { Lynx } from 'ual-lynx'
+import { UALJs } from '@arisenual/plainjs-renderer'
+import { PeepsAuthDesktop } from '@arisenual/peepsid-desktop'
+import { PeepsAuthIOS } from '@arisenual/peepsid-ios'
 
 const myCallback = arrayOfUsers => {
   // Execute on successful user authentication
@@ -51,14 +51,14 @@ const myChain = {
 
 const myAppName = 'My UAL App'
 
-const scatter = new Scatter([myChain], { appName: myAppName })
-const lynx = new Lynx([myChain], { appName: myAppName })
+const peepsDesktop = new PeepsAuthDesktop([myChain], { appName: myAppName })
+const peepsIOS = new PeepsAuthIOS([myChain], { appName: myAppName })
 
 const myAppRoot = {
   containerElement: document.getElementById('my-ual-app')
 }
 
-const ual = new UALJs(myCallback, [myChain], myAppName, [scatter, lynx], myAppRoot)
+const ual = new UALJs(myCallback, [myChain], myAppName, [peepsDesktop, peepsIOS], myAppRoot)
 
 ual.init()
 ```
@@ -80,11 +80,11 @@ RPC_PROTOCOL=https
 RPC_HOST=api.example.net
 RPC_PORT=443
 ```
-These values are taken from the local chain created by following the [Developer Portal node set up instructions](https://developers.eos.io/eosio-home/docs/getting-the-software). _(Note: if this is your first time following the tutorial you will need to install the eosio binaries [here](https://developers.eos.io/eosio-home/docs/setting-up-your-environment))._  These can be edited according to the requirements of your project if you have a different chain set up.  They will be used as the chain data in the example app.
-*See the [Basic Example App for UAL with PlainJS](https://github.com/EOSIO/ual-plainjs-renderer/tree/develop/examples) for more details.*
+These values are taken from the local chain created by following the [Developer Portal node set up instructions](https://developers.arisen.network/docs/getting-the-software). _(Note: if this is your first time following the tutorial you will need to install the eosio binaries [here](https://developers.arisen.network/docs/setting-up-your-environment))._  These can be edited according to the requirements of your project if you have a different chain set up.  They will be used as the chain data in the example app.
+*See the [Basic Example App for UAL with PlainJS](https://github.com/arisenual/plainjs-renderer/tree/develop/examples) for more details.*
 
 ## Development
-After you set up your environment you can begin development.  Make sure you are back in the ``/`` directory of the ``ual-plainjs-renderer`` package.
+After you set up your environment you can begin development.  Make sure you are back in the ``/`` directory of the ``@arisenual/plainjs-renderer`` package.
 ```bash
 yarn
 yarn link
@@ -94,7 +94,7 @@ yarn build -w
 In a duplicate terminal tab, enter the following commands:
 ```bash
 cd examples
-yarn link ual-plainjs-renderer
+yarn link @arisenual/plainjs-renderer
 yarn
 yarn example
 ```
