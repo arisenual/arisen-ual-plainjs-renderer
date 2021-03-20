@@ -1,4 +1,4 @@
-import { Authenticator, ButtonStyle, User } from 'universal-authenticator-library'
+import { Authenticator, ButtonStyle, User } from '@arisenual/core'
 
 export class BaseMockAuthenticator extends Authenticator {
   public init(): Promise<void> {

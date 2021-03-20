@@ -1,8 +1,8 @@
-import { JsonRpc } from 'eosjs'
-import { Ledger } from 'ual-ledger'
-import { UALJs } from 'ual-plainjs-renderer'
-import { Scatter } from 'ual-scatter'
-import { User } from 'universal-authenticator-library'
+import { JsonRpc } from 'arisensdk'
+import { Ledger } from '@arisenual/ledger'
+import { UALJs } from '@arisenual/plainjs-renderer'
+import { PeepsID } from '@arisenual/peepsid-desktop'
+import { User } from '@arisenual/core'
 import { MockAuthenticator } from './MockAuthenticator'
 import demoTransaction from './demo-transaction'
 
@@ -46,7 +46,7 @@ const ual = new UALJs(
   [exampleNet],
   'UAL Test',
   [
-    new Scatter([exampleNet], { appName: 'UAL Example' }),
+    new PeepsID([exampleNet], { appName: 'UAL Example' }),
     new Ledger([exampleNet]),
     new MockAuthenticator([exampleNet]),
   ],

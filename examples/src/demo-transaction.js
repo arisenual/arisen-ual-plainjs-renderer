@@ -1,6 +1,6 @@
 export default {
   actions: [{
-    account: 'eosio.token',
+    account: 'arisen.token',
     name: 'transfer',
     authorization: [{
       actor: '', // use account that was logged in
@@ -8,8 +8,8 @@ export default {
     }],
     data: {
       from: '', // use account that was logged in
-      to: 'cryptkeeper',
-      quantity: '1.0000 EOS',
+      to: 'peeps',
+      quantity: '1.0000 RIX',
       memo: 'UAL works!',
     },
   }],

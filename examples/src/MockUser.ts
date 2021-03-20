@@ -5,7 +5,7 @@ import {
   UALError,
   UALErrorType,
   User,
-} from 'universal-authenticator-library'
+} from '@arisenual/core'
 
 const signatureResponse = {
   wasBroadcast: true,

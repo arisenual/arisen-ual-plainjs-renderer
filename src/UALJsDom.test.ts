@@ -1,5 +1,5 @@
 import 'jest-localstorage-mock'
-import { Authenticator, User } from 'universal-authenticator-library'
+import { Authenticator, User } from '@arisenual/core'
 import { UALJsDom } from './UALJsDom'
 
 import { BaseMockAuthenticator } from './AuthMocks/BaseMockAuthenticator'

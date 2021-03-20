@@ -1,6 +1,6 @@
 # UAL Renderer for PlainJS
 
-This library providers a Plain JS renderer around the [Universal Authenticator Library](https://github.com/EOSIO/universal-authenticator-library/).
+This library providers a Plain JS renderer around the [Universal Authenticator Library](https://github.com/EOSIO/@arisenual/core/).
 
 It uses nothing but standard Javascript and should be supported across desktop and mobile.
 
@@ -64,7 +64,7 @@ ual.init()
 ```
 
 ## Example
-An example on how to use the library is provided in the [examples](https://github.com/EOSIO/universal-authenticator-library/tree/develop/examples) folder.
+An example on how to use the library is provided in the [examples](https://github.com/EOSIO/@arisenual/core/tree/develop/examples) folder.
 
 ## Environment Set Up
 **A one-time environment setup is required prior to development.**  The following commands provides a quick starting point.  Make sure you are in the ``examples/`` directory.

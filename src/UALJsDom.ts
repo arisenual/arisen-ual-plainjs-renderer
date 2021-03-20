@@ -1,4 +1,4 @@
-import { Authenticator, UALError, UALErrorType } from 'universal-authenticator-library'
+import { Authenticator, UALError, UALErrorType } from '@arisenual/core'
 import { AccountInputModal } from './components/AccountInputModal'
 import { AuthButton } from './components/AuthButton'
 import { DownloadAuthenticatorModal } from './components/DownloadAuthenticatorModal'
@@ -409,7 +409,7 @@ export class UALJsDom {
           &#10006; I got it!
         </div>
         <p class="ual-infoExpanded">
-          This option allows you to connect to your favorite key manager app.
+          This option allows you to connect to your favorite dWeb authenticator.
         </p>
       </div>
     `

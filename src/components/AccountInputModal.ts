@@ -1,4 +1,4 @@
-import { Authenticator } from 'universal-authenticator-library'
+import { Authenticator } from '@arisenual/core'
 import { UALJsAbstractBaseComponent } from '../UALJsAbstractBaseComponent'
 import { AuthButton } from './AuthButton'
 
@@ -69,12 +69,12 @@ export class AccountInputModal extends UALJsAbstractBaseComponent {
     accountInputModal.innerHTML = `
       <span class="ual-modal-close">&times;</span>
       <p class="ual-modal-content-description">
-        Next, please enter your Account Name
+        Next, please enter your User Name
       </p>
       <input
         id="ual-account-input"
         type="text"
-        placeholder="Account Name"
+        placeholder="User Name"
         autocapitalize="none"
       />
       <div id="ual-account-input-error"></div>

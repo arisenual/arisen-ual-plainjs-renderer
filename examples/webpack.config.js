@@ -19,7 +19,7 @@ module.exports = {
         test: /\.(js)$/,
         exclude: /node_modules/,
         include: [
-          '/node_modules/universal-authenticator-library',
+          '/node_modules/@arisenual/core',
         ],
         use: ["babel-loader"]
       },

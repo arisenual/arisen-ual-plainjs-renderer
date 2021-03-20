@@ -1,4 +1,4 @@
-import { Authenticator } from 'universal-authenticator-library'
+import { Authenticator } from '@arisenual/core'
 import { UALJsAbstractBaseComponent } from '../UALJsAbstractBaseComponent'
 
 interface AuthButtonOptions {

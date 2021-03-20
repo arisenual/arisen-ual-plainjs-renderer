@@ -1,4 +1,4 @@
-import { Authenticator, Chain, UAL, User } from 'universal-authenticator-library'
+import { Authenticator, Chain, UAL, User } from '@arisenual/core'
 import { UALJsDom } from './UALJsDom'
 
 /**

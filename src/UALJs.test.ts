@@ -1,6 +1,6 @@
 import 'jest-localstorage-mock'
 import promisePolyFill from 'promise'
-import { Authenticator, User } from 'universal-authenticator-library'
+import { Authenticator, User } from '@arisenual/core'
 import { UALJs } from './UALJs'
 
 import { AutologinAuthenticator } from './AuthMocks/AutologinAuthenticator'

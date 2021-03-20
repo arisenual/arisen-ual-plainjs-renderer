@@ -1,5 +1,5 @@
 {
-  "name": "universal-authenticator-library-js-example",
+  "name": "@arisenual/core-js-example",
   "version": "0.0.8",
   "main": "index.js",
   "author": {
@@ -42,6 +42,6 @@
     "ual-ledger": "0.3.0",
     "ual-plainjs-renderer": "../",
     "ual-scatter": "0.3.0",
-    "universal-authenticator-library": "0.3.0"
+    "@arisenual/core": "0.3.0"
   }
 }

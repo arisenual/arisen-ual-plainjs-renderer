@@ -4,7 +4,7 @@ import {
   Chain,
   UALError,
   UALErrorType,
-} from 'universal-authenticator-library'
+} from '@arisenual/core'
 import { MockUser } from './MockUser'
 
 export class MockAuthenticator extends Authenticator {

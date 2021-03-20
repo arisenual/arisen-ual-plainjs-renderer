@@ -5802,12 +5802,12 @@ ual-ledger@0.3.0:
   dependencies:
     eosjs "20.0.3"
     eosjs-ledger-signature-provider "0.1.2"
-    universal-authenticator-library "0.3.0"
+    @arisenual/core "0.3.0"
 
 ual-plainjs-renderer@../:
   version "0.3.0"
   dependencies:
-    universal-authenticator-library "0.3.0"
+    @arisenual/core "0.3.0"
 
 ual-scatter@0.3.0:
   version "0.3.0"
@@ -5818,7 +5818,7 @@ ual-scatter@0.3.0:
     "@scatterjs/eosjs2" "1.5.33"
     elliptic "6.5.2"
     eosjs "21.0.1-rc1"
-    universal-authenticator-library "0.3.0"
+    @arisenual/core "0.3.0"
 
 uglify-js@3.4.x:
   version "3.4.10"
@@ -5889,9 +5889,9 @@ unique-string@^2.0.0:
   dependencies:
     crypto-random-string "^2.0.0"
 
-universal-authenticator-library@0.3.0:
+@arisenual/core@0.3.0:
   version "0.3.0"
-  resolved "https://registry.yarnpkg.com/universal-authenticator-library/-/universal-authenticator-library-0.3.0.tgz#c9001f1739578fae5b8c32c4d3e754ad681f541a"
+  resolved "https://registry.yarnpkg.com/@arisenual/core/-/@arisenual/core-0.3.0.tgz#c9001f1739578fae5b8c32c4d3e754ad681f541a"
   integrity sha512-G/D9S1/b0fwRHPWHi+bPKjqHb/A5BqiOQ3k/R3MYPQQa0yxStn+Gf3oZjKKFnj9ZhELZ6FHOFRTXzcn/ggxXDg==
 
 unpipe@1.0.0, unpipe@~1.0.0:

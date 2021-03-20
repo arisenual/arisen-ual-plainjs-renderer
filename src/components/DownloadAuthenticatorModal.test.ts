@@ -1,4 +1,4 @@
-import { ButtonStyle } from 'universal-authenticator-library'
+import { ButtonStyle } from '@arisenual/core'
 import { BaseMockAuthenticator } from '../AuthMocks/BaseMockAuthenticator'
 import { DownloadAuthenticatorModal } from './DownloadAuthenticatorModal'
 
